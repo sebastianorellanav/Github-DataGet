@@ -100,10 +100,10 @@ ffin = []
 maxCommits = []
 maxCommitsDiarios = []
 
-fecha = input("¿Hasta que FECHA se desean recuperar los repositorios?\nFormato fecha: 2021/03/29\n")
-año = int(fecha[0:4])
-mes = int(fecha[5:7])
-dia = int(fecha[8:])
+fecha = input("¿Hasta que FECHA se desean recuperar los repositorios?\nFormato fecha: 29/03/2021\n")
+dia = int(fecha[0:2])
+mes = int(fecha[3:5])
+año = int(fecha[6:])
 ### Establecer fecha limite para recuperar repos
 fechaLimite = datetime.datetime(año, mes, dia)
 
